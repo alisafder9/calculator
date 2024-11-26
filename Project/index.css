@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-image: url(freepik__upload__25174.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+header div {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 15rem;
+    text-align: center;
+    border-radius: 10px 5px;
+    padding: 10px;
+}
+
+header h1 {
+    font-weight: lighter;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 3rem;
+}
+
+.toggleMenu {
+    margin-bottom: 7rem;
+}
+
+nav section {
+    display: flex;
+}
+
+nav p {
+    margin-left: 1rem;
+    padding-top: 0.9rem;
+    font-size: large;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 4px;
+    position: absolute;
+    right: 1rem;
+    margin-top: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+nav div span {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    background-color: black;
+    height: 4px;
+    width: 24px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3rem;
+    list-style: none;
+    background-color: black;
+    width: 100%;
+}
+
+.list {
+    display: none;
+}
+
+nav ul li {
+    margin-bottom: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(118, 110, 110, 0.868);
+}
+
+#active {
+    background-color: #007BFF;
+}
+
+#head-content {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+main {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    height: 38rem;
+}
+
+main h1 {
+    letter-spacing: 5px;
+    background-color: #033E3E;
+    padding: 1rem 0rem;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    place-self: center;
+    padding: 30px;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: transform 1s;
+    animation: example 1s linear;
+}
+
+@keyframes example {
+    0% {
+        left: -25rem;
+    }
+
+    20% {
+        left: -20rem;
+    }
+
+    40% {
+        left: -15rem;
+    }
+
+    60% {
+        left: -10rem;
+    }
+
+    80% {
+        left: -5rem;
+    }
+
+    100% {
+        left: 0rem;
+    }
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+}
+
+#display {
+    width: 15rem;
+    background-color: black;
+    margin-bottom: 1.5rem;
+    height: 4rem;
+    border-radius: 10px;
+    text-align: end;
+    padding-right: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 15rem;
+    height: 20rem;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: aliceblue;
+}
+
+.calculate {
+    background-color: green;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+footer p {
+    padding: 10px 0px;
+    color: rgba(245, 245, 245, 0.607);
+    font-size: small;
+}
+
+@media screen and (max-width: 400px) {}
