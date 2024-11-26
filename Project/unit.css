@@ -122,7 +122,6 @@ main {
     margin-bottom: 0.2rem;
     height: 20rem;
     color: white;
-    text-align: center;
 }
 
 main div {
@@ -142,69 +141,6 @@ div figure {
     display: inline-block;
     padding-left: 2.5rem;
 }
-
-#length {
-    position: relative;
-    animation: example1 2s linear;
-}
-
-@keyframes example1 {
-    0% {
-        top: -25rem;
-    }
-
-    20% {
-        top: -20rem;
-    }
-
-    40% {
-        top: -15rem;
-    }
-
-    60% {
-        top: -10rem;
-    }
-
-    80% {
-        top: -5rem;
-    }
-
-    100% {
-        top: -0rem;
-    }
-}
-
-#temperature {
-    position: relative;
-    animation: example2 2s linear;
-}
-
-@keyframes example2 {
-    0% {
-        top: 25rem;
-    }
-
-    20% {
-        top: 20rem;
-    }
-
-    40% {
-        top: 15rem;
-    }
-
-    60% {
-        top: 10rem;
-    }
-
-    80% {
-        top: 5rem;
-    }
-
-    100% {
-        top: 0rem;
-    }
-}
-
 
 div select {
     display: block;
