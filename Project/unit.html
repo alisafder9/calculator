@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unit.css">
+    <title>Scientific Calculator using HTML, CSS and Js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1 id="greeting">Welcome</h1>
+        </div>
+    </header>
+
+    <nav id="toggleMenu">
+        <section>
+            <p>Menu</p>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="list" class="list">
+                <li><a href="index.html">Simple Calculator</a></li>
+                <li><a href="age.html">Age Calculator</a></li>
+                <li><a id="active" href="unit.html">Unit Converter</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <main>
+        <h1 id="head-content">Unit Converter</h1>
+        <div id="container">
+            <figure id="length">
+                <img src="6637342.png" alt="Length Image">
+                <figcaption>Length</figcaption>
+            </figure>
+            <figure id="weigth">
+                <img src="kg.png" alt="Weight Image">
+                <figcaption>Weight</figcaption>
+            </figure>
+            <figure id="temperature">
+                <img src="temp.png" alt="Temperature Image">
+                <figcaption>Temperature</figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 - All Rights Rserved.</p>
+    </footer>
+    <script src="unit.js"></script>
+</body>
+
+</html>

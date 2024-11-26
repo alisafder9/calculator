@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator using HTML, CSS and Js</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="greeting">Welcome</h1>
+        </div>
+    </header>
+    <nav id="toggleMenu">
+        <section>
+            <p>Menu</p>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="list" class="list">
+                <li><a id="active" href="index.html">Simple Calculator</a></li>
+                <li><a href="age.html">Age Calculator</a></li>
+                <li><a href="unit.html">Unit Converter</a></li>
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <h1 id="head-content">Calculator</h1>
+        <div class="calculator">
+            <input id="display" type="text" disabled>
+            <div class="buttons">
+                <button onclick="appendToDIspaly('sin(')">sin</button>
+                <button onclick="appendToDIspaly('cos(')">cos</button>
+                <button onclick="appendToDIspaly('tan(')">tan</button>
+                <button onclick="appendToDIspaly('log(')">log</button>
+                <button onclick="appendToDIspaly('(')">(</button>
+                <button onclick="appendToDIspaly(')')">)</button>
+                <button onclick="appendToDIspaly('^')">^</button>
+                <button onclick="appendToDIspaly('pi')">π</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDIspaly('%')">%</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="appendToDIspaly('/')">÷</button>
+                <button onclick="appendToDIspaly('7')">7</button>
+                <button onclick="appendToDIspaly('8')">8</button>
+                <button onclick="appendToDIspaly('9')">9</button>
+                <button onclick="appendToDIspaly('*')">x</button>
+                <button onclick="appendToDIspaly('4')">4</button>
+                <button onclick="appendToDIspaly('5')">5</button>
+                <button onclick="appendToDIspaly('6')">6</button>
+                <button onclick="appendToDIspaly('-')">-</button>
+                <button onclick="appendToDIspaly('1')">1</button>
+                <button onclick="appendToDIspaly('2')">2</button>
+                <button onclick="appendToDIspaly('3')">3</button>
+                <button onclick="appendToDIspaly('+')">+</button>
+                <button onclick="appendToDIspaly('00')">00</button>
+                <button onclick="appendToDIspaly('0')">0</button>
+                <button onclick="appendToDIspaly('.')">.</button>
+                <button class="calculate" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 - All Rights Rserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
